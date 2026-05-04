@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validation Test</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        input { padding: 5px; margin-bottom: 10px; width: 200px; }
+        button { padding: 10px 20px; cursor: pointer; }
+        .case { margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9; }
+    </style>
+</head>
+<body>
+    <h2>Kiểm thử Validation HTML5</h2>
+    <form id="test-form" onsubmit="event.preventDefault(); alert('Form hợp lệ, đã Submit thành công!');">
+        
+        <div class="case">
+            <label>Trường hợp 1: required</label><br>
+            <input type="text" id="case1" name="case1" required value="">
+        </div>
+
+        <div class="case">
+            <label>Trường hợp 2: type="email"</label><br>
+            <input type="email" id="case2" name="case2" value="abc">
+        </div>
+
+        <div class="case">
+            <label>Trường hợp 3: min/max</label><br>
+            <input type="number" id="case3" name="case3" min="1" max="10" value="15">
+        </div>
+
+        <div class="case">
+            <label>Trường hợp 4: pattern</label><br>
+            <input type="text" id="case4" name="case4" pattern="[0-9]{10}" value="abc123">
+        </div>
+
+        <div class="case">
+            <label>Trường hợp 5: minlength</label><br>
+            <input type="password" id="case5" name="case5" minlength="8" value="123">
+        </div>
+
+        <button type="submit" id="submit-btn">Submit Form</button>
+    </form>
+</body>
+</html>

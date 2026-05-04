@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký Tài khoản</title>
+</head>
+<body>
+
+<h2>Form Đăng ký Tài khoản E-Commerce</h2>
+
+<form action="#" method="POST">
+    
+    <fieldset>
+        <legend>Thông tin cá nhân</legend>
+        
+        <div class="form-group">
+            <label for="fullname">Họ tên:</label>
+            <input type="text" id="fullname" name="fullname" required minlength="2" maxlength="50" placeholder="Nhập họ và tên">
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Nhập địa chỉ email">
+        </div>
+        
+        <div class="form-group">
+            <label for="phone">Số điện thoại:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Ví dụ: 0912345678">
+        </div>
+        
+        <div class="form-group">
+            <label for="dob">Ngày sinh:</label>
+            <input type="date" id="dob" name="dob" max="2026-04-29" required placeholder="dd/mm/yyyy">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Tài khoản</legend>
+        
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" pattern="[A-Za-z0-9_]{3,20}" required placeholder="Chữ cái, số, _, 3-20 ký tự">
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" required placeholder="Ít nhất 8 ký tự, 1 hoa, 1 số">
+        </div>
+        
+        <div class="form-group">
+            <label for="confirm_password">Xác nhận password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" minlength="8" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" required placeholder="Nhập lại password">
+        </div>
+    </fieldset>
+
+    
+    <fieldset>
+        <legend>Thông tin giao hàng</legend>
+        
+        <div class="form-group">
+            <label for="city">Thành phố:</label>
+            <select id="city" name="city" required>
+                <option value="" disabled selected>-- Chọn Thành phố --</option>
+                <option value="HN">Hà Nội</option>
+                <option value="HCM">Hồ Chí Minh</option>
+                <option value="DN">Đà Nẵng</option>
+                <option value="CT">Cần Thơ</option>
+                <option value="HP">Hải Phòng</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="district">Quận/Huyện:</label>
+            <select id="district" name="district" required>
+                <option value="" disabled selected>-- Chọn Quận/Huyện --</option>
+                <option value="Q1">Quận 1</option>
+                <option value="Q3">Quận 3</option>
+                <option value="BD">Ba Đình</option>
+                <option value="CG">Cầu Giấy</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="address">Địa chỉ chi tiết:</label><br>
+            <textarea id="address" name="address" rows="3" required placeholder="Nhập số nhà, tên đường..."></textarea>
+        </div>
+        
+        <div class="form-group radio-group">
+            <label>Giới tính:</label>
+            <input type="radio" id="gender_male" name="gender" value="male" required>
+            <label for="gender_male">Nam</label>
+            
+            <input type="radio" id="gender_female" name="gender" value="female">
+            <label for="gender_female">Nữ</label>
+            
+            <input type="radio" id="gender_other" name="gender" value="other">
+            <label for="gender_other">Khác</label>
+        </div>
+    </fieldset>
+
+    <div class="form-group checkbox-group">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">Tôi đồng ý với các điều khoản và dịch vụ</label>
+    </div>
+
+    <button type="submit">Đăng ký</button>
+    <button type="reset">Làm lại</button>
+
+</form>
+
+</body>
+</html>
