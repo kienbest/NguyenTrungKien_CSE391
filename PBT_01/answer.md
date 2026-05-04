@@ -218,3 +218,5 @@ duy nhất
 Lỗi 9 : Dòng 45 - Thẻ <p> trong footer chưa được đóng - Cách sửa : Thêm thẻ đóng
 sau "CopyRight 2026"
 Lỗi 10: Dòng 48 - Thiếu thẻ đóng toàn bộ tài liệu - Cách sửa : Thêm thẻ đóng ở cuối file.
+
+LINK BÀI VIDEO  : [(https://www.youtube.com/watch?v=x2K-pmrxBQ0&t=7s)]
