@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Product Page</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin:20px; background:#f9f9f9;">
+
+    <h1 style="text-align:center; color:darkblue;">GIỚI THIỆU SẢN PHẨM MULTIMEDIA</h1>
+
+    <!-- SVG LOGO -->
+    <div style="text-align:center; margin-bottom:30px;">
+        <svg width="120" height="120">
+            <circle cx="60" cy="60" r="50" fill="skyblue" stroke="darkblue" stroke-width="4"/>
+            <text x="35" y="68" font-size="20" fill="darkblue">LOGO</text>
+        </svg>
+    </div>
+
+    <!-- 3 HÌNH ẢNH SẢN PHẨM -->
+    <h2>Hình ảnh sản phẩm</h2>
+
+    <figure>
+        <img src="smart phone.png" 
+             alt="Điện thoại thông minh màu đen màn hình lớn"
+             loading="lazy"
+             style="max-width:100%; height:auto;">
+        <figcaption>Hình 1: Điện thoại thông minh cao cấp.</figcaption>
+    </figure>
+
+    <figure>
+        <img src="headphones.png" 
+             alt="Tai nghe không dây màu trắng"
+             loading="lazy"
+             style="max-width:100%; height:auto;">
+        <figcaption>Hình 2: Tai nghe không dây chất lượng âm thanh cao.</figcaption>
+    </figure>
+
+    <figure>
+        <img src="laptop.png" 
+             alt="Laptop bạc mỏng nhẹ hiện đại"
+             loading="lazy"
+             style="max-width:100%; height:auto;">
+        <figcaption>Hình 3: Laptop thiết kế sang trọng hiệu năng mạnh.</figcaption>
+    </figure>
+
+    <!-- VIDEO YOUTUBE -->
+    <h2>Video giới thiệu từ YouTube</h2>
+    <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/tgbNymZ7vqY"
+            title="YouTube video player" 
+            frameborder="0"
+            allowfullscreen>
+    </iframe>
+
+    <!-- VIDEO HTML5 -->
+    <h2>Video sản phẩm HTML5</h2>
+    <video width="560" controls poster="https://via.placeholder.com/560x315.png?text=Product+Video">
+        <source src="sample-video.mp4" type="video/mp4">
+        <source src="sample-video.webm" type="video/webm">
+        Trình duyệt không hỗ trợ video.
+    </video>
+
+    <!-- AUDIO -->
+    <h2>Nhạc nền giới thiệu</h2>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Trình duyệt không hỗ trợ audio.
+    </audio>
+
+</body>
+</html>
