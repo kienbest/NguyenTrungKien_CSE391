@@ -813,3 +813,5 @@ có specificity cao nhất:
 
 - Nếu specificity BẰNG nhau:
   => Rule viết SAU sẽ thắng.
+
+  link D "[https://youtu.be/01qhNuiUeh8]

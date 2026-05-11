@@ -1,0 +1,31 @@
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding:30px;
+}
+.box{
+    width:300px;
+    padding: 20px;
+    border:5px solid black;
+    margin-bottom : 20px;
+    background-color: lightblue;
+}
+.content-box{
+    box-shadow: content-box;
+    background-color: blueviolet;
+}
+
+.border-box{
+    box-sizing: border-box;
+    background-color: aquamarine;
+}
+.margin-box{
+    width:200px;
+    height:100px;
+    background-color: bisque;
+}
+.box1{
+    margin-bottom : 50px;
+}
+box2{
+    margin-top : 30px;
+}
