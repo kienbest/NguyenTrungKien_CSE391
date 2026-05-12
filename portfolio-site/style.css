@@ -148,3 +148,45 @@ nav a:hover {
 .html {
     width: 95%;
 }
+.portfolio-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fill, minmax(300px, 1fr));
+
+    gap: 1.5rem;
+}
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.portfolio-item img {
+    transition: 0.4s;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,0.6);
+
+    opacity: 0;
+    transition: 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    padding: 1rem;
+    color: white;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
