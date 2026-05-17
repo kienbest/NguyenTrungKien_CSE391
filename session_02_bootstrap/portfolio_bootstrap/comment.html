@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Comment Section UI</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet"
+          href="css/comments.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow-sm">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold"
+               href="#">
+               CommentUI
+            </a>
+
+        </div>
+
+    </nav>
+
+    <!-- MAIN -->
+    <div class="container py-5">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <!-- COMMENT FORM -->
+                <div class="card border-0 shadow-sm p-4 mb-5">
+
+                    <div class="d-flex flex-column flex-md-row gap-3">
+
+                        <!-- AVATAR -->
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg"
+                             class="rounded-circle avatar">
+
+                        <!-- FORM -->
+                        <div class="flex-grow-1">
+
+                            <h3 class="mb-3">
+                                Leave a Comment
+                            </h3>
+
+                            <textarea class="form-control mb-3"
+                                      rows="5"
+                                      placeholder="Write your comment..."></textarea>
+
+                            <button class="btn btn-primary">
+
+                                <i class="bi bi-send-fill me-2"></i>
+
+                                Post Comment
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- TITLE -->
+                <h3 class="mb-4">
+                    Comments
+                </h3>
+
+                <!-- COMMENT 1 -->
+                <div class="card border-0 shadow-sm p-4 mb-4">
+
+                    <div class="d-flex gap-3">
+
+                        <!-- AVATAR -->
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg"
+                             class="rounded-circle comment-avatar">
+
+                        <!-- CONTENT -->
+                        <div>
+
+                            <div class="d-flex align-items-center gap-2 mb-2">
+
+                                <h5 class="mb-0">
+                                    Sarah Johnson
+                                </h5>
+
+                                <small class="text-muted">
+                                    2 hours ago
+                                </small>
+
+                            </div>
+
+                            <p>
+
+                                This article was really helpful.
+                                I learned a lot about Bootstrap layouts
+                                and responsive design.
+
+                            </p>
+
+                            <button class="btn btn-sm btn-outline-primary">
+
+                                <i class="bi bi-reply-fill me-1"></i>
+
+                                Reply
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- REPLY COMMENT -->
+                <div class="ms-md-5">
+
+                    <div class="card border-0 shadow-sm p-4 mb-4">
+
+                        <div class="d-flex gap-3">
+
+                            <!-- AVATAR -->
+                            <img src="https://randomuser.me/api/portraits/men/55.jpg"
+                                 class="rounded-circle comment-avatar">
+
+                            <!-- CONTENT -->
+                            <div>
+
+                                <div class="d-flex align-items-center gap-2 mb-2">
+
+                                    <h5 class="mb-0">
+                                        Michael Lee
+                                    </h5>
+
+                                    <small class="text-muted">
+                                        1 hour ago
+                                    </small>
+
+                                </div>
+
+                                <p>
+
+                                    Totally agree!
+                                    Bootstrap makes responsive UI
+                                    development much faster.
+
+                                </p>
+
+                                <button class="btn btn-sm btn-outline-primary">
+
+                                    <i class="bi bi-reply-fill me-1"></i>
+
+                                    Reply
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- COMMENT 2 -->
+                <div class="card border-0 shadow-sm p-4 mb-4">
+
+                    <div class="d-flex gap-3">
+
+                        <!-- AVATAR -->
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg"
+                             class="rounded-circle comment-avatar">
+
+                        <!-- CONTENT -->
+                        <div>
+
+                            <div class="d-flex align-items-center gap-2 mb-2">
+
+                                <h5 class="mb-0">
+                                    Emily Davis
+                                </h5>
+
+                                <small class="text-muted">
+                                    30 minutes ago
+                                </small>
+
+                            </div>
+
+                            <p>
+
+                                The hover effects and Bootstrap cards
+                                look really modern and clean.
+
+                            </p>
+
+                            <button class="btn btn-sm btn-outline-primary">
+
+                                <i class="bi bi-reply-fill me-1"></i>
+
+                                Reply
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+
+        <div class="container">
+
+            <p class="mb-0">
+                © 2026 Comment UI. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
