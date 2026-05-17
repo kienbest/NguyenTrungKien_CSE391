@@ -1,0 +1,357 @@
+/* =========================
+   ROOT THEME
+========================= */
+
+:root{
+
+    --bs-primary:#7c3aed;
+    --bs-secondary:#06b6d4;
+
+    --bs-border-radius:1.2rem;
+
+}
+
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:
+    linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b
+    );
+
+    color:white;
+
+    font-family:'Segoe UI',sans-serif;
+
+    overflow-x:hidden;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+
+    background:
+    rgba(15,23,42,0.7) !important;
+
+    backdrop-filter:blur(14px);
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.08);
+
+}
+
+.navbar-brand{
+
+    color:#fff !important;
+
+    font-weight:700;
+}
+
+.nav-link{
+
+    color:#cbd5e1 !important;
+
+    transition:0.3s;
+}
+
+.nav-link:hover{
+
+    color:#7c3aed !important;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+    min-height:100vh;
+
+    background:
+    radial-gradient(
+        circle at top left,
+        rgba(124,58,237,0.4),
+        transparent 40%
+    ),
+
+    radial-gradient(
+        circle at bottom right,
+        rgba(6,182,212,0.25),
+        transparent 40%
+    );
+
+}
+
+.hero h1{
+
+    font-size:5rem;
+
+    font-weight:800;
+}
+
+.text-gradient{
+
+    background:
+    linear-gradient(
+        90deg,
+        #7c3aed,
+        #06b6d4
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+
+    color:#cbd5e1;
+
+    font-size:1.2rem;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-primary{
+
+    background:
+    linear-gradient(
+        90deg,
+        #7c3aed,
+        #06b6d4
+    );
+
+    border:none;
+
+    padding:0.9rem 2rem;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+    transition:0.3s;
+}
+
+.btn-primary:hover{
+
+    transform:
+    translateY(-3px)
+    scale(1.03);
+
+    box-shadow:
+    0 10px 25px rgba(124,58,237,0.35);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+
+    padding:6rem 0;
+}
+
+.section-title{
+
+    text-align:center;
+
+    font-size:3rem;
+
+    font-weight:800;
+
+    margin-bottom:4rem;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card{
+
+    background:
+    rgba(255,255,255,0.06);
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:24px;
+
+    color:white;
+
+    transition:0.35s;
+
+    overflow:hidden;
+}
+
+.card:hover{
+
+    transform:
+    translateY(-8px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   ABOUT IMAGE
+========================= */
+
+.about-image img{
+
+    border-radius:50%;
+
+    border:
+    5px solid rgba(255,255,255,0.2);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+.progress{
+
+    height:12px;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    border-radius:999px;
+
+    overflow:hidden;
+}
+
+.progress-bar{
+
+    background:
+    linear-gradient(
+        90deg,
+        #7c3aed,
+        #06b6d4
+    );
+}
+
+/* =========================
+   PORTFOLIO
+========================= */
+
+.portfolio-card img{
+
+    height:260px;
+
+    object-fit:cover;
+
+    transition:0.4s;
+}
+
+.portfolio-card:hover img{
+
+    transform:scale(1.08);
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form-control{
+
+    background:
+    rgba(255,255,255,0.08);
+
+    border:
+    1px solid rgba(255,255,255,0.1);
+
+    color:white;
+
+    border-radius:14px;
+
+    padding:1rem;
+}
+
+.form-control::placeholder{
+
+    color:#94a3b8;
+}
+
+.form-control:focus{
+
+    background:
+    rgba(255,255,255,0.1);
+
+    border-color:#7c3aed;
+
+    color:white;
+
+    box-shadow:
+    0 0 0 0.2rem rgba(124,58,237,0.25);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+
+    border-top:
+    1px solid rgba(255,255,255,0.08);
+
+    background:
+    rgba(15,23,42,0.7);
+}
+
+.footer-links a{
+
+    color:#cbd5e1;
+
+    text-decoration:none;
+
+    margin:0 12px;
+
+    transition:0.3s;
+}
+
+.footer-links a:hover{
+
+    color:#7c3aed;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .hero h1{
+
+        font-size:3rem;
+    }
+
+    .section-title{
+
+        font-size:2.2rem;
+    }
+
+}
