@@ -1,0 +1,125 @@
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f1f5f9;
+
+    font-family:'Segoe UI',sans-serif;
+
+    color:#334155;
+
+    line-height:1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    backdrop-filter:blur(10px);
+}
+
+/* =========================
+   AVATARS
+========================= */
+
+.avatar{
+    width:80px;
+    height:80px;
+
+    object-fit:cover;
+}
+
+.comment-avatar{
+    width:60px;
+    height:60px;
+
+    object-fit:cover;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card{
+    border-radius:20px;
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form-control{
+    border-radius:14px;
+
+    padding:1rem;
+
+    border:1px solid #d1d5db;
+}
+
+.form-control:focus{
+    border-color:#6366f1;
+
+    box-shadow:0 0 0 0.2rem rgba(99,102,241,0.2);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn{
+    border-radius:999px;
+
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+/* =========================
+   COMMENT TEXT
+========================= */
+
+h5{
+    color:#172554;
+}
+
+p{
+    color:#475569;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .avatar{
+        width:65px;
+        height:65px;
+    }
+
+    .comment-avatar{
+        width:50px;
+        height:50px;
+    }
+
+}
