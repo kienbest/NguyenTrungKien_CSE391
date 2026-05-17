@@ -2,100 +2,147 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portfolio</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> rel="stylesheet"
+    <title>Bootstrap Portfolio</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet"
+          href="css/custom-theme.css">
+
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
 
-         <div class="container">
+        <div class="container">
 
-                <a class="navbar-brand fw-bold"
-                href="#">
-                YourName
-                </a>
+            <a class="navbar-brand"
+               href="#">
+               YourName
+            </a>
 
-                <button class="navbar-toggler"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#menu">
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu">
 
-                    <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
 
-                </button>
+            </button>
 
-                <div class="collapse navbar-collapse"
-                    id="menu">
+            <div class="collapse navbar-collapse"
+                 id="menu">
 
-                    <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto">
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">
-                                About
-                            </a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="#about">
+                           About
+                        </a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">
-                                Skills
-                            </a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="#skills">
+                           Skills
+                        </a>
+                    </li>
 
-                    </ul>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="#portfolio">
+                           Portfolio
+                        </a>
+                    </li>
 
-                </div>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="#contact">
+                           Contact
+                        </a>
+                    </li>
+
+                </ul>
 
             </div>
-        </nav>
 
-    </header>
+        </div>
+
+    </nav>
 
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero d-flex align-items-center text-center">
 
-        <h1>
-            Hi, I'm <span>Your Name</span>
-        </h1>
+        <div class="container">
 
-        <p>
-            Full-Stack Developer | UI Designer | Problem Solver
-        </p>
+            <h1 class="display-2 fw-bold">
+                Hi, I'm <span>Your Name</span>
+            </h1>
 
-        <a href="#portfolio" class="hero-btn">
-            View My Work
-        </a>
+            <p class="lead mt-3">
+                Full-Stack Developer | UI Designer
+            </p>
+
+            <a href="#portfolio"
+               class="btn btn-primary btn-lg mt-4">
+
+               View My Work
+
+            </a>
+
+        </div>
 
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="about">
+    <section class="about"
+             id="about">
 
-        <div class="container about-grid">
+        <div class="container">
 
-            <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1000&auto=format&fit=crop" alt="">
-            </div>
+            <h2 class="section-title">
+                About Me
+            </h2>
 
-            <div class="about-content">
+            <div class="row align-items-center g-5">
 
-                <h2>About Me</h2>
+                <!-- IMAGE -->
+                <div class="col-md-5 about-image">
 
-                <p class="lead">
-                    I'm a passionate developer with 3+ years of experience building web applications that make a difference.
-                </p>
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop"
+                         class="img-fluid shadow">
 
-                <p>
-                    Specialized in Frontend development with React and Vue.
-                    Also experienced in Backend with Node.js and Python.
-                    I believe in clean code, user-centered design, and continuous learning.
-                </p>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="col-md-7">
+
+                    <h2 class="mb-4">
+                        Passionate Developer
+                    </h2>
+
+                    <p class="lead">
+                        I create responsive and modern web applications.
+                    </p>
+
+                    <p>
+                        Experienced in Frontend Development, UI Design,
+                        and Backend Integration with modern technologies.
+                    </p>
+
+                </div>
 
             </div>
 
@@ -104,62 +151,113 @@
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="skills">
+    <section class="skills"
+             id="skills">
 
         <div class="container">
 
-            <h2 class="section-title">My Skills</h2>
+            <h2 class="section-title">
+                My Skills
+            </h2>
 
-            <div class="skills-grid">
+            <div class="row g-4">
 
-                <div class="skill-card">
+                <!-- HTML -->
+                <div class="col-md-6">
 
-                    <div class="skill-top">
-                        <span>HTML5</span>
-                        <span>95%</span>
-                    </div>
+                    <div class="card p-4">
 
-                    <div class="skill-bar">
-                        <div class="skill-progress html"></div>
-                    </div>
+                        <div class="d-flex justify-content-between mb-2">
 
-                </div>
+                            <span>HTML5</span>
+                            <span>95%</span>
 
-                <div class="skill-card">
+                        </div>
 
-                    <div class="skill-top">
-                        <span>CSS3</span>
-                        <span>70%</span>
-                    </div>
+                        <div class="progress">
 
-                    <div class="skill-bar">
-                        <div class="skill-progress css"></div>
-                    </div>
+                            <div class="progress-bar"
+                                 style="width:95%">
 
-                </div>
+                            </div>
 
-                <div class="skill-card">
+                        </div>
 
-                    <div class="skill-top">
-                        <span>JavaScript</span>
-                        <span>65%</span>
-                    </div>
-
-                    <div class="skill-bar">
-                        <div class="skill-progress js"></div>
                     </div>
 
                 </div>
 
-                <div class="skill-card">
+                <!-- CSS -->
+                <div class="col-md-6">
 
-                    <div class="skill-top">
-                        <span>React</span>
-                        <span>80%</span>
+                    <div class="card p-4">
+
+                        <div class="d-flex justify-content-between mb-2">
+
+                            <span>CSS3</span>
+                            <span>90%</span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-bar"
+                                 style="width:90%">
+
+                            </div>
+
+                        </div>
+
                     </div>
 
-                    <div class="skill-bar">
-                        <div class="skill-progress react"></div>
+                </div>
+
+                <!-- JS -->
+                <div class="col-md-6">
+
+                    <div class="card p-4">
+
+                        <div class="d-flex justify-content-between mb-2">
+
+                            <span>JavaScript</span>
+                            <span>85%</span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-bar"
+                                 style="width:85%">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- REACT -->
+                <div class="col-md-6">
+
+                    <div class="card p-4">
+
+                        <div class="d-flex justify-content-between mb-2">
+
+                            <span>React</span>
+                            <span>80%</span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-bar"
+                                 style="width:80%">
+
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>
@@ -171,75 +269,109 @@
     </section>
 
     <!-- PORTFOLIO -->
-    <section id="portfolio" class="portfolio">
+    <section class="portfolio"
+             id="portfolio">
 
         <div class="container">
 
-            <h2 class="section-title">My Portfolio</h2>
+            <h2 class="section-title">
+                My Portfolio
+            </h2>
 
-            <div class="filter-buttons">
+            <!-- FILTER -->
+            <div class="filter-buttons text-center mb-5">
 
-                <button class="active">All</button>
-                <button>Web</button>
-                <button>Mobile</button>
-                <button>Design</button>
+                <button class="btn btn-primary">
+                    All
+                </button>
+
+                <button class="btn btn-outline-primary">
+                    Web
+                </button>
+
+                <button class="btn btn-outline-primary">
+                    Mobile
+                </button>
+
+                <button class="btn btn-outline-primary">
+                    Design
+                </button>
 
             </div>
 
-            <div class="portfolio-grid">
+            <!-- GRID -->
+            <div class="row g-4">
 
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=1200&auto=format&fit=crop" alt="">
+                <!-- ITEM -->
+                <div class="col-md-6 col-lg-4">
 
-                    <div class="overlay">
-                        <h3>Project One</h3>
-                        <p>React + Node.js</p>
+                    <div class="card portfolio-card">
+
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+                             class="card-img-top">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Project One
+                            </h5>
+
+                            <p class="card-text">
+                                React + Node.js
+                            </p>
+
+                        </div>
+
                     </div>
+
                 </div>
 
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop" alt="">
+                <!-- ITEM -->
+                <div class="col-md-6 col-lg-4">
 
-                    <div class="overlay">
-                        <h3>Project Two</h3>
-                        <p>UI Design</p>
+                    <div class="card portfolio-card">
+
+                        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop"
+                             class="card-img-top">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Project Two
+                            </h5>
+
+                            <p class="card-text">
+                                UI Design
+                            </p>
+
+                        </div>
+
                     </div>
+
                 </div>
 
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=1200&auto=format&fit=crop" alt="">
+                <!-- ITEM -->
+                <div class="col-md-6 col-lg-4">
 
-                    <div class="overlay">
-                        <h3>Project Three</h3>
-                        <p>Frontend</p>
+                    <div class="card portfolio-card">
+
+                        <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=1200&auto=format&fit=crop"
+                             class="card-img-top">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Project Three
+                            </h5>
+
+                            <p class="card-text">
+                                Frontend Development
+                            </p>
+
+                        </div>
+
                     </div>
-                </div>
 
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1200&auto=format&fit=crop" alt="">
-
-                    <div class="overlay">
-                        <h3>Project Four</h3>
-                        <p>Mobile App</p>
-                    </div>
-                </div>
-
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="">
-
-                    <div class="overlay">
-                        <h3>Project Five</h3>
-                        <p>Design</p>
-                    </div>
-                </div>
-
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?q=80&w=1200&auto=format&fit=crop" alt="">
-
-                    <div class="overlay">
-                        <h3>Project Six</h3>
-                        <p>Creative UI</p>
-                    </div>
                 </div>
 
             </div>
@@ -249,22 +381,26 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="contact">
+    <section class="contact"
+             id="contact">
 
         <div class="container">
 
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="section-title">
+                Contact Me
+            </h2>
 
-            <div class="contact-grid">
+            <div class="row g-5">
 
                 <!-- LEFT -->
-                <div class="contact-info">
+                <div class="col-md-5 contact-info">
 
-                    <h3>Contact Information</h3>
+                    <h3>
+                        Let's Work Together
+                    </h3>
 
                     <p>
-                        Feel free to reach out.
-                        I'm always open to discussing new projects.
+                        Feel free to contact me for projects or collaborations.
                     </p>
 
                     <div class="info">
@@ -278,29 +414,53 @@
                 </div>
 
                 <!-- RIGHT -->
-                <form class="contact-form">
+                <div class="col-md-7">
 
-                    <div class="form-group">
-                        <label>Full Name</label>
-                        <input type="text" placeholder="John Doe">
-                    </div>
+                    <form class="card p-4 contact-form">
 
-                    <div class="form-group">
-                        <label>Email Address</label>
-                        <input type="email" placeholder="john@example.com">
-                    </div>
+                        <div class="mb-3">
 
-                    <div class="form-group">
-                        <label>Message</label>
+                            <label class="form-label">
+                                Full Name
+                            </label>
 
-                        <textarea rows="5" placeholder="Tell me about your project..."></textarea>
-                    </div>
+                            <input type="text"
+                                   class="form-control"
+                                   placeholder="John Doe">
 
-                    <button type="submit">
-                        Send Message →
-                    </button>
+                        </div>
 
-                </form>
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Email Address
+                            </label>
+
+                            <input type="email"
+                                   class="form-control"
+                                   placeholder="john@example.com">
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Message
+                            </label>
+
+                            <textarea rows="5"
+                                      class="form-control"
+                                      placeholder="Your message..."></textarea>
+
+                        </div>
+
+                        <button class="btn btn-primary">
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
 
             </div>
 
@@ -309,34 +469,41 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer py-5">
 
-        <div class="container footer-content">
+        <div class="container text-center">
 
-            <div class="footer-logo">
+            <h3 class="mb-3">
                 YourName
+            </h3>
+
+            <div class="footer-links mb-3">
+
+                <a href="#">
+                    GitHub
+                </a>
+
+                <a href="#">
+                    LinkedIn
+                </a>
+
+                <a href="#">
+                    Email
+                </a>
+
             </div>
 
             <p>
-                Building digital experiences
+                © 2026 YourName. All rights reserved.
             </p>
 
-            <div class="footer-links">
-
-                <a href="#">GitHub</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Email</a>
-
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-            © 2026 YourName. All rights reserved.
         </div>
 
     </footer>
+
+    <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
