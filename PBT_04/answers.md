@@ -402,3 +402,9 @@ justify-content:center
 căn giữa theo chiều ngang
 align-items:center
 căn giữa theo chiều dọc
+text
+
+
+
+
+LINK PHẦN D code-along"[https://youtu.be/CAmytkb-g7Q]
