@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Playground</title>
+    <link rel="stylesheet" href="positioning.css">
+</head>
+<body>
+
+    <!-- Fixed Header -->
+    <header class="header">
+        <div class="logo">MyShop</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- Sticky Sidebar -->
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+
+            <ul>
+                <li>Dashboard</li>
+                <li>Products</li>
+                <li>Orders</li>
+                <li>Settings</li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+
+            <div class="product-card">
+
+                <div class="badge">HOT</div>
+
+                <img src="https://picsum.photos/400/250">
+
+                <h3>Sản phẩm nổi bật</h3>
+
+                <p>
+                    Đây là mô tả sản phẩm để test positioning.
+                </p>
+
+            </div>
+
+            <!-- fake long content -->
+            <div class="long-content">
+                <p>Lorem ipsum dolor sit amet...</p>
+                <p>Lorem ipsum dolor sit amet...</p>
+                <p>Lorem ipsum dolor sit amet...</p>
+                <p>Lorem ipsum dolor sit amet...</p>
+                <p>Lorem ipsum dolor sit amet...</p>
+                <p>Lorem ipsum dolor sit amet...</p>
+                <p>Lorem ipsum dolor sit amet...</p>
+                <p>Lorem ipsum dolor sit amet...</p>
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- Scroll To Top -->
+    <button class="scroll-top">
+        ↑
+    </button>
+
+</body>
+</html>
