@@ -1,0 +1,31 @@
+body {
+    font-family: $font-primary;
+    background: $background-color;
+}
+
+.card {
+
+    background: white;
+    padding: $spacing-md;
+    border-radius: 10px;
+
+    @include card-shadow;
+
+    .card-image {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .card-title {
+        margin-top: $spacing-sm;
+        color: $text-color;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    &.featured {
+        border: 2px solid $secondary-color;
+    }
+}
