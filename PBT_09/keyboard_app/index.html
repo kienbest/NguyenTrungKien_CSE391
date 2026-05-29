@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Keyboard Gallery</h1>
+
+    <div class="gallery">
+
+        <img
+            id="mainImage"
+            src="https://placehold.co/800x400?text=Image+1"
+            alt="Gallery Image"
+        >
+
+        <div class="controls">
+
+            <button id="prevBtn" aria-label="Ảnh trước">
+                ⬅ Prev
+            </button>
+
+            <button id="playBtn" aria-label="Play slideshow">
+                ▶ Play
+            </button>
+
+            <button id="nextBtn" aria-label="Ảnh tiếp theo">
+                Next ➡
+            </button>
+
+        </div>
+
+    </div>
+
+    <p>
+        ← → Chuyển ảnh |
+        1-9 Chọn ảnh |
+        Space Play/Pause |
+        Ctrl+K Command Palette
+    </p>
+
+</div>
+
+<div id="imageModal" class="modal hidden">
+
+    <div
+        class="modal-content"
+        role="dialog"
+        aria-modal="true"
+    >
+        <img
+            id="modalImage"
+            src=""
+            alt="Preview"
+        >
+    </div>
+
+</div>
+
+<div id="palette" class="palette hidden">
+
+    <div class="palette-box">
+
+        <input
+            id="commandInput"
+            type="text"
+            placeholder="Search command..."
+            aria-label="Command Search"
+        >
+
+        <ul id="commandList"></ul>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

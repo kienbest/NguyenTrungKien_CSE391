@@ -407,4 +407,4 @@ text
 
 
 
-LINK PHẦN D code-along"[https://youtu.be/CAmytkb-g7Q]
+LINK PHẦN D code-along"[https://www.youtube.com/watch?v=jjcauogt4S8]

@@ -403,3 +403,6 @@ DocumentFragment
 Tránh cập nhật DOM liên tục.
 Giảm số lần reflow/repaint.
 Với danh sách lớn (1000+ phần tử) nhanh hơn đáng kể.
+
+
+link youtube [https://www.youtube.com/watch?v=fRSiNJ3TxMg]
