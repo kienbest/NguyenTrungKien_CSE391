@@ -1,0 +1,156 @@
+/* ===================
+   RESET
+=================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 40px;
+}
+
+/* ===================
+   PRODUCT CARD
+=================== */
+
+.card {
+    width: 320px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ===================
+   IMAGE ZOOM
+=================== */
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+/* ===================
+   CARD CONTENT
+=================== */
+
+.card h3 {
+    padding: 15px;
+}
+
+.card p {
+    padding: 0 15px 15px;
+}
+
+/* ===================
+   BUTTON HOVER
+=================== */
+
+button {
+    margin: 15px;
+
+    padding: 12px 24px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #007bff;
+    color: white;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #28a745;
+    color: white;
+
+    transform: scale(1.05);
+}
+
+/* ===================
+   LOADING SPINNER
+=================== */
+
+.spinner {
+    width: 60px;
+    height: 60px;
+
+    margin: 50px auto;
+
+    border: 6px solid #ddd;
+    border-top: 6px solid #007bff;
+
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ===================
+   FADE IN
+=================== */
+
+.fade-box {
+    width: 300px;
+
+    margin: 50px auto;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background: white;
+
+    border-radius: 10px;
+
+    animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
