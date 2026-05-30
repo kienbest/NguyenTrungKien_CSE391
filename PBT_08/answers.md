@@ -502,4 +502,5 @@ Hỗ trợ callback:
 
 giống API thật của JavaScript.
 
+
 link youtube [https://www.youtube.com/watch?v=UJz2qmy2q18]
