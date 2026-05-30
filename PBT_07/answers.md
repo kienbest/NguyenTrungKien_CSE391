@@ -381,7 +381,6 @@ reflow
 appendChild
 ↓
 reflow
-
 ...
 1000 lần
 Dùng DocumentFragment
