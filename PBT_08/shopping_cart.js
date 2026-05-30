@@ -170,7 +170,7 @@ cart.addItem(
 cart.addItem(
     {
         id: 1,
-        name: "iPhone 16",
+        name: "iPhone 18",
         price: 25990000
     },
     1
