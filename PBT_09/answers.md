@@ -515,4 +515,7 @@ Tăng hiệu năng khi render số lượng lớn phần tử
 
 => Đây là hai kỹ thuật tối ưu DOM rất phổ biến trong JavaScript.
 
+
+
+
 link youtube [https://www.youtube.com/watch?v=PKpcmdb6KcA]
