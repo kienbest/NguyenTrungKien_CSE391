@@ -11,7 +11,6 @@ function App() {
     
     console.log ("count: ", count);
   }  
-
   return(
     <div>
       <h2> Bad counter</h2>
