@@ -83,7 +83,7 @@ function searchProducts(products, keyword) {
 
 // TEST
 
-console.log("=== IN STOCK ===");
+console.log("=== IN STOCK home ===");
 console.log(getInStock(products));
 
 console.log("=== PHONE ===");
