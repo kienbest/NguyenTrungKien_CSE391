@@ -6,18 +6,13 @@ import './App.css'
 
 function App() {
   
-  return (
-    <div className="product">
-      <h1>iphone15</h1>
-      <p className="price">25,000,000 VND</p>
-      <ul>
-        <li>màn hình : 6.1 inch</li>
-        <li>Camera:480Mp</li>
-        <li>Pin: 3349 mAh</li>
-        
-      </ul>
-      <button>Mua ngay</button>
-    </div>
+  console.log("1️⃣ Component được gọi!");
+  return(
+      <div style={{ padding:"20px", border:"2px solid blue"}}>
+        <h2>Lifecycle Demo</h2>
+        <p>Mở console để (F12) xem log</p>
+        <p>Component này chỉ render một lần khi được gọi</p>
+      </div>
   );
 }
 
@@ -83,3 +78,42 @@ export default App
 // export default App
 
 // để cho phép file khác import và sử dụng.
+
+// bài 1.1 Trả lời câu hỏi
+// Tại sao component chỉ render 1 lần?
+
+// Vì sau khi React hiển thị giao diện lần đầu:
+
+// App()
+// ↓
+// return JSX
+// ↓
+// Hiển thị lên màn hình
+
+// không có dữ liệu nào thay đổi.
+
+// Nên React không cần gọi lại App.
+
+// Khi nào render lại?
+
+// Khi:
+
+// setState(...)
+
+// được gọi.
+
+// Ví dụ:
+
+// setCount(5)
+
+// React sẽ:
+
+// setCount
+// ↓
+// Re-render
+// ↓
+// App() chạy lại
+// ↓
+// JSX mới
+// ↓
+// UI cập nhật
