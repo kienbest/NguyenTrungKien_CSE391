@@ -144,6 +144,6 @@ const search =
 
     }, 500);
 
-search("iphone");
+search("iphone12");
 search("iphone 16");
 search("iphone 16 pro");
