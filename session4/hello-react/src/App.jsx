@@ -5,15 +5,20 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
-  
-  console.log("1️⃣ Component được gọi!");
+  let count =0;
+  function handelClick(){
+    count = count + 1;
+    
+    console.log ("count: ", count);
+  }  
+
   return(
-      <div style={{ padding:"20px", border:"2px solid blue"}}>
-        <h2>Lifecycle Demo</h2>
-        <p>Mở console để (F12) xem log</p>
-        <p>Component này chỉ render một lần khi được gọi</p>
-      </div>
-  );
+    <div>
+      <h2> Bad counter</h2>
+      <p>Bộ đếm : {count}</p>
+      <button onClick={handleClick}>Tặngm(+1)</button>
+    </div>
+  )
 }
 
 export default App

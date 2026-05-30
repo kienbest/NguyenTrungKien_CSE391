@@ -1,4 +1,4 @@
-Câu A1
+            Câu A1
 Position: static
 Vẫn chiếm chỗ trong flow? CÓ
 Tham chiếu vị trí : Vị trí mặc định của document
@@ -113,7 +113,7 @@ Use case:
 
 Sticky header
 Sticky sidebar
-Câu A2 — Flexbox vs Grid
+                Câu A2 — Flexbox vs Grid
 Trường hợp 1
 .container { display: flex; }
 .item { flex: 1; }
@@ -200,7 +200,7 @@ Sơ đồ:
 | 4 | 5 | 6 |
 | 7 |   |   |
 
-Câu c1 
+            Câu c1 
 1. Navigation bar ngang (logo + menu + buttons)
 Nên dùng:
  Flexbox
