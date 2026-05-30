@@ -1,0 +1,22 @@
+.card{
+
+    padding:$spacing-md;
+
+    @include card-shadow;
+
+    .card-image{
+        width:100%;
+    }
+
+    .card-title{
+        color:$primary-color;
+    }
+
+    &:hover{
+        transform:translateY(-5px);
+    }
+
+    &.featured{
+        border:2px solid gold;
+    }
+}

@@ -445,4 +445,17 @@ Gallery	Grid
 Responsive	Media Queries
 Mobile-first	min-width
 
+Bai b3: # B3 - SCSS Compile
+
+Install:
+
+npm install -g sass
+
+Compile:
+
+sass scss/style.scss style.css
+
+Watch:
+
+sass --watch scss/style.scss:style.css
 link youtube [https://www.youtube.com/watch?v=YPPj8CpI1IY]
