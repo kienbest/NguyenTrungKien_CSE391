@@ -8,6 +8,7 @@ Parsing và DOM Tree Construction : Trình duyệt đọc mã HTML và xây dự
 Rendering : Trình duyệt kết hợp DOM và CSS (đã được tải) để tạo ra cây khung nhìn (Render Tree ) và vẽ các phân tử lên màn hình người dùng
 II.tab NetWork Trong Chrome DevTool
 
+
 Trong DevTool , teb Network cho ta thấy thông tin về tất cả các tài nguyên mà trang web đang tải về . Điều này bao gồm các tệp HTML , CSS, JavaScript , hình ảnh và các lời gọi API
 
 Trang web được chọn để chụp và đánh dấu là Wikipedia
