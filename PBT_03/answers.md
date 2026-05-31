@@ -8,7 +8,6 @@ Ví dụ
 <h1 style="color: red; font-size: 40px;">
     Xin chào
 </h1>
-
 </body>
 </html>
 + Ưu điểm
