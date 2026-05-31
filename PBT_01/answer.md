@@ -9,7 +9,6 @@ Rendering : Trình duyệt kết hợp DOM và CSS (đã được tải) để t
 II.tab NetWork Trong Chrome DevTool
 
 Trong DevTool , teb Network cho ta thấy thông tin về tất cả các tài nguyên mà trang web đang tải về . Điều này bao gồm các tệp HTML , CSS, JavaScript , hình ảnh và các lời gọi API
-
 Trang web được chọn để chụp và đánh dấu là Wikipedia
 --Hình ảnh screenshot và đánh dấu Status Code của request đầu tiên:
 
