@@ -497,7 +497,6 @@ body {
 
 }
 # SCSS Compile Command
-
 sass scss/style.scss style.css
 
 link youtube [https://www.youtube.com/watch?v=p1dugg-H5Gs]
